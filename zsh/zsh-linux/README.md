@@ -12,4 +12,4 @@
     
 ## How to use:
 
-## to be continue
+## To be continue
