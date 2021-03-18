@@ -1,0 +1,48 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# Source global definitions
+if [ -f /etc/zshrc ]; then
+	. /etc/zshrc
+fi
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.zinit/zshistory
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -e
+# End of lines configured by zsh-newuser-install
+
+# Install zinit
+source ~/.zinit/bin/zinit.zsh
+# Install zsh plug
+source ~/.zinit/zinit.zsh
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+
+export PATH=$PATH:~/Desktop/Myshell
+export HOMEBREW_NO_AUTO_UPDATE=true
+
+
+# To customize prompt, run `p10k configure` or edit ~/.zinit/p10k.zsh.
+[[ ! -f ~/.zinit/p10k.zsh ]] || source ~/.zinit/p10k.zsh
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/a/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/a/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/a/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/a/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
