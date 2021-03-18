@@ -1,4 +1,4 @@
-zsh-linux1
+zsh-linux
 
 <img width="750" alt="zsh-linux1" src="https://user-images.githubusercontent.com/57790433/111655903-fc7aec00-8844-11eb-8bb0-d4f492239ecf.png">
 
