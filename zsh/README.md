@@ -1,6 +1,6 @@
 zsh-linux1
 
-![image](https://user-images.githubusercontent.com/57790433/111655903-fc7aec00-8844-11eb-8bb0-d4f492239ecf.png)
+<img width="500" alt="zsh-linux1" src="https://user-images.githubusercontent.com/57790433/111655903-fc7aec00-8844-11eb-8bb0-d4f492239ecf.png">
 
 zsh-macos
 
