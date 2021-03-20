@@ -28,9 +28,9 @@
 ## In server(外网机器):
     
     vim frps.ini
-    ./frps -c frps.ini
+    nohup ./.frp/frps -c ~/.frp/frps.ini >/dev/null 2>&1 &
 
 ## In client(内网机器):
     
     vim frpc.ini
-    ./frpc -c frpc.ini
+    nohup ./.frp/frpc -c ~/.frp/frpc.ini >/dev/null 2>&1 &
